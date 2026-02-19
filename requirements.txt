@@ -1,0 +1,26 @@
+# ── 핵심 ──
+fastapi==0.115.0
+uvicorn[standard]==0.34.0
+pydantic==2.9.0
+pydantic-settings==2.5.0
+torch>=2.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+requests>=2.31.0
+
+# ── 데이터 수집 ──
+PublicDataReader>=1.0.0
+
+# ── RAG ──
+chromadb>=1.4.0
+
+# ── 테스트 ──
+pytest>=7.4.0
+httpx>=0.25.0
+
+# ── DB ORM ──
+sqlalchemy>=2.0.0
+pymysql>=1.1.0
+cryptography>=42.0.0

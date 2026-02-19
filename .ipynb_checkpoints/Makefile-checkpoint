@@ -1,0 +1,23 @@
+.PHONY: install collect train train-dl serve test clean
+
+install:
+	pip install -r requirements.txt
+
+collect:
+	python scripts/run_collect.py
+
+train:
+	python scripts/run_train.py --model xgboost
+
+train-dl:
+	python scripts/run_train.py --model neural_net
+
+serve:
+	python scripts/run_server.py
+
+test:
+	pytest tests/ -v
+
+clean:
+	find . -type d -name __pycache__ -exec rm -rf {} +
+	rm -rf .pytest_cache
